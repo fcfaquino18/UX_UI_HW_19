@@ -1,0 +1,268 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #404040;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px; 
+}
+.logo {
+    margin-top: 15px;
+    width: 30%;
+}
+.menu {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu a{
+    text-decoration: none;
+    color: #404040;
+    margin-right: 30px;
+    font-size: 20px;
+    font-style: bold;
+}
+.hero {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.aboutme {
+    display: flex;
+    justify-content: center;
+}
+.heroimg {
+    display: flex;
+    align-items: center;
+}
+.aboutme1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.intro {
+    color: #1A93BA;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 40px;
+
+}
+.intro h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.about {
+    margin: 0;
+    color: #404040;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 24px;
+    
+}
+.pillars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#topic {
+    margin: 0;
+}
+.research, .design, .analytics, .optimization {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 70px;
+}
+.pillars h1 {
+    color: #1A93BA;
+    font-style: bold;
+}
+/*.tools {
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 20px;
+    font-style: bold;
+}*/
+.tools {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "figma GoogleSuite VisualStudio atlassian AdobeAnalytics QuantumMetrics Github Codepen";
+    text-align: center;
+}
+.figma {
+    grid-area: figma;
+   
+}
+.GoogleSuite {
+    grid-area: GoogleSuite;
+    
+}
+.VisualStudio {
+    grid-area: VisualStudio;
+    
+}
+.atlassian {
+    grid-area: atlassian;
+    
+}
+.AdobeAnalytics {
+    grid-area: AdobeAnalytics;
+    
+}
+.QuantumMetrics {
+    grid-area: QuantumMetrics;
+    
+}
+.Github {
+    grid-area: Github;
+    
+}
+.Codepen {
+    grid-area: Codepen;
+    
+}
+
+.tools img {
+    border: 4px solid #1A93BA;
+    height: 150px;
+    margin: 10px;
+    border-radius: 12px;
+}
+#skillset {
+    background: #E0F3F9;
+    padding-top: 50px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+#chat {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+#work {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.skl {
+
+    background-color: #E0F3F9;
+}
+.project {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "odyseek adultings spa";
+    text-align: left;
+    font-size: 20px;
+    font-style: bold;
+}
+/*
+.odyseek, .adultings, .spa {
+    margin: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+} */
+.odyseek {
+    grid-area: odyseek;
+    margin: 20px;
+}
+.adultings {
+    grid-area: adultings;
+    margin: 20px;
+}
+.spa {
+    grid-area: spa;
+    margin: 20px;
+}
+.project img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+}
+#role {
+    color:#787777;
+    margin: auto;
+}
+.footer {
+    margin-top: 50x;
+    color: white;
+    background-color: #066482;
+}
+.footer1 {
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    display: grid;
+}
+.footer h1 {
+    font-size: 40px;
+    font-style: bold;
+    margin-bottom: 0;
+}
+.socmed {
+    display: inline-block;
+}
+.socmed img {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.copyright {
+    text-align: center;
+    font-style: light;
+}
+#topic {
+    color: #1A93BA;
+    font-size: 30px;
+    font-style: bold;
+}
+.topfooter {
+    display: flex;
+    justify-content: space-between;
+
+}
+.button {
+    margin-right: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+    .menu {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+  .tools {
+        grid-template-areas:
+        "figma GoogleSuite VisualStudio atlassian"
+        "AdobeAnalytics QuantumMetrics Github Codepen"
+        ;
+    }
+   #toolname {
+        margin-bottom: 120px;
+    }
+    .research, .design, .analytics, .optimization {
+        width: 25%;
+    }
+
+    .project {
+      grid-template-areas:
+        "odyseek"
+        "adultings"
+        "spa"
+      ;
+    }
+  }
+  
+
